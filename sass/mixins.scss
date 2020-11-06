@@ -1,0 +1,40 @@
+@import 'variables';
+
+@mixin linkFormat {
+	text-decoration: none;
+	color: $color-black;
+}
+
+@mixin mainButton {
+	display: inline-block;
+	width: 12rem;
+	padding: 0.6rem 0;
+	text-align: center;
+	background-color: $color-white;
+	border: 2px solid $color-black;
+	box-shadow: 2px 2px $color-black;
+
+	&:hover {
+		box-shadow: none;
+	}
+}
+
+@mixin buttomShadow {
+	box-shadow: 0 2px 2rem #fafafa;
+}
+
+@mixin linkWithArrow {
+	@include linkFormat;
+	display: inline-block;
+	margin: 2rem 0;
+
+	&::after {
+		content: '\2192';
+		margin-left: 2rem;
+		transition: all 350ms ease-in-out;
+	}
+
+	&:hover::after {
+		margin-left: 3rem;
+	}
+}

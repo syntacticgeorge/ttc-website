@@ -1,0 +1,22 @@
+{
+  "name": "theorily",
+  "version": "1.0.0",
+  "description": "Website for Theorily Tech Collective",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syntacticgeorge/ttc-website.git"
+  },
+  "author": "George Okanga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syntacticgeorge/ttc-website/issues"
+  },
+  "homepage": "https://github.com/syntacticgeorge/ttc-website#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
